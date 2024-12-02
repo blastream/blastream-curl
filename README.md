@@ -2,7 +2,7 @@ Some examples from : https://api.v2.blastream.com/api-docs/
 
 ## Create a channel and an admin access of the channel
 
-Curl request:
+### Curl request
 
 ```firstchannel``` is the name of your channel
 
@@ -19,7 +19,7 @@ curl -X 'POST' \
 }'
 ```
 
-Curl response:
+### Curl response
 
 ```json
 {
@@ -31,7 +31,7 @@ Curl response:
 }
 ```
 
-Iframe url build :
+### Iframe url build
 
 ```reponse->url ? token=SESSION_ADMIN_TOKEN & api=PUBLIC_KEY_API```
 
@@ -39,7 +39,7 @@ Iframe url build :
 
 ## Create a participant
 
-Curl request:
+### Curl request
 
 ```sh
 curl -X 'POST' \
@@ -54,7 +54,7 @@ curl -X 'POST' \
 }'
 ```
 
-Curl response:
+### Curl response
 
 ```json
 {
@@ -63,7 +63,7 @@ Curl response:
 }
 ```
 
-Iframe url build :
+### Iframe url build
 
 ```reponse->url ? token=SESSION_TOKEN & api=PUBLIC_KEY_API```
 
@@ -83,15 +83,16 @@ curl -X 'PUT' \
 }'
 ```
 
-Curl response:
+### Curl response
 
 ```json
 {
   "token": "COLLAB_TOKEN",
   "invite_link": "https://app.v2.blastream.com/eve_firstchannel/access/COLLAB_TOKEN"
 }
+```
 
-Iframe url build :
+### Iframe url build
 
 ```reponse->invite_link ? api=PUBLIC_KEY_API```
 
